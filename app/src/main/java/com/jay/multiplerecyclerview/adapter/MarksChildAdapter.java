@@ -50,8 +50,6 @@ public  class MarksChildAdapter extends RecyclerView.Adapter<MarksChildAdapter.V
         public TextView tvSubjectName;
         public TextView tvMarks;
 
-        public RecyclerView childRecycler;
-
         public ViewHolder(View view) {
             super(view);
             //ButterKnife.bind(this, view);

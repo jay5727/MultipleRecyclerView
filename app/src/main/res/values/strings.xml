@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MultipleRecyclerView</string>
+    <string name="empty_list_message">No Items Available</string>
+    <string name="Error">Something went wrong.Please try again…!</string>
 </resources>

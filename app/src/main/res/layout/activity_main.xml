@@ -2,17 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.jay.multiplerecyclerview.MainActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical"
         tools:listitem="@layout/row_layout_header">
 
     </android.support.v7.widget.RecyclerView>
 
+    <include
+        android:id="@+id/includeId"
+        layout="@layout/empty_list_message"
+        android:visibility="gone" />
 </LinearLayout>

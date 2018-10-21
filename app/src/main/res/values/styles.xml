@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CardViewStyle" parent="CardView">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="EmptyListMessage" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/emptyListMessage</item>
+    </style>
 </resources>

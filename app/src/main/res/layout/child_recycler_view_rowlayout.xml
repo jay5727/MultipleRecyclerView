@@ -6,47 +6,39 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/linLayCase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
+        <com.google.android.flexbox.FlexboxLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:visibility="visible">
+            app:flexDirection="row"
+            app:flexWrap="nowrap"
+            app:justifyContent="space_between">
 
-            <com.google.android.flexbox.FlexboxLayout
+
+            <TextView
+                android:id="@+id/tvSubjectName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:flexDirection="row"
-                app:flexWrap="nowrap"
-                app:justifyContent="space_between">
+                android:background="@drawable/line_separator"
+                android:gravity="center"
+                android:text="OOPS"
+                android:textColor="#000"
+                android:textSize="16sp" />
 
 
-                <TextView
-                    android:id="@+id/tvSubjectName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/line_separator"
-                    android:gravity="center"
-                    android:text="OOPS"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tvMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_separator"
+                android:gravity="center"
+                android:text="5727"
+                android:textColor="#000"
+                android:textSize="16sp" />
 
-
-                <TextView
-                    android:id="@+id/tvMarks"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/line_separator"
-                    android:gravity="center"
-                    android:text="5727"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="18sp" />
-
-            </com.google.android.flexbox.FlexboxLayout>
-        </LinearLayout>
+        </com.google.android.flexbox.FlexboxLayout>
     </LinearLayout>
 </LinearLayout>
 
